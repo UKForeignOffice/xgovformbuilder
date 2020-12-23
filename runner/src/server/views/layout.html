@@ -87,11 +87,13 @@
 						<div class="rf-cookie-banner__buttons">
 							<div
 								class="rf-cookie-banner__button rf-cookie-banner__button-accept govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
-								<button id="accept-all-cookies" class="rf-button govuk-button rf-button--inline" typeof="submit">Agree all Cookies</button>
+								<!--<button id="accept-all-cookies" class="rf-button govuk-button rf-button--inline" typeof="submit">Agree all Cookies</button>-->
+								<button class="rf-button govuk-button rf-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
 							</div>
 							<div
 								class="rf-cookie-banner__button rf-cookie-banner__button-settings govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
-								<button id="preference-cookies" class="button govuk-button rf-button--inline">Set cookie preferences</button>       </p>
+								<!--<button id="preference-cookies" class="button govuk-button rf-button--inline">Set cookie preferences</button> -->
+<a class="rf-button govuk-button rf-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Set cookie preferences</a>								</p>
 							</div>
 						</div>
 					</div>
@@ -176,6 +178,7 @@
   </script>
 	<script src="{{ assetPath }}/cookie-banner.js" ></script>
   	<script src="{{ assetPath }}/cookie-functions.js" ></script>
+	<script src="{{ assetPath }}/cookie-settings.js" > </script>
 	<!--<script src="{{ assetPath }}/cookie-preferences.js" ></script>-->
 
   <script>

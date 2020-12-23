@@ -18,8 +18,8 @@ export const configureBlankiePlugin = (
       defaultSrc: ["self"],
       fontSrc: ["self", "data:"],
       scriptSrc: (() =>
-        ["self"].concat(
-          config.matomoUrl ? [config.matomoUrl/piwik/piwik.js] : []
+        ["self", "unsafe-inline"].concat(
+          config.matomoUrl ? [config.matomoUrl + "/piwik/piwik.js"] : []
         ))(),
       styleSrc: ["self", "unsafe-inline"],
       imgSrc: (() =>
