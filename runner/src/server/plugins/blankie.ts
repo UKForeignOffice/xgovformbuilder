@@ -12,19 +12,19 @@ export const configureBlankiePlugin = (
     plugin: Blankie,
     options: {
       connectSrc: (() =>
-        ["self"].concat(
+        ['self'].concat(
           config.matomoUrl ? [config.matomoUrl] : []
         ))(),
-      defaultSrc: ["self"],
-      fontSrc: ["self", "data:"],
+      defaultSrc: ['self'],
+      fontSrc: ['self', 'data:'],
       scriptSrc: (() =>
         ['self', 'unsafe-inline'].concat(
           config.matomoUrl ? [config.matomoUrl + '/piwik/piwik.js'] : []
         ))(),
-      styleSrc: ["self", "unsafe-inline"],
+      styleSrc: ['self', 'unsafe-inline'],
       imgSrc: (() =>
-        ["self"].concat(config.matomoUrl ? [config.matomoUrl] : []))(),
-      generateNonces: false,
+        ['self'].concat(config.matomoUrl ? [config.matomoUrl] : []))(),
+      generateNonces: false
     },
   };
 };
