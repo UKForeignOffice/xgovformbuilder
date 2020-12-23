@@ -11,7 +11,8 @@
     <link rel="preload" as="font" href="{{ assetPath }}/fonts/bold-b542beb274-v2.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="{{ assetPath }}/fonts/bold-affa96571d-v2.woff" type="font/woff" crossorigin="anonymous">
     <link rel="preload" as="font" href="{{ assetPath }}/fonts/light-f591b13f7d-v2.woff" type="font/woff" crossorigin="anonymous">
-    <link href="{{ assetPath }}/stylesheets/application.css" rel="stylesheet" />
+    <link href="{{ assetPath }}/stylesheets/application.css" rel="stylesheet" type="text/css" />
+	<link href="{{ assetPath }}/cookies.css" rel="stylesheet" type="text/css" />
 
   <!--<![endif]-->
 
@@ -59,6 +60,7 @@
         href: '#main-content',
         text: 'Skip to main content'
     }) }}
+    <!--
     <div id="global-cookie-message">
         <div class="govuk-width-container">
             <p class="govuk-body-s govuk-!-margin-0">
@@ -66,7 +68,48 @@
                 <a href="/help/cookies" target="_blank">Review your cookie settings.</a>
             </p>
         </div>
-    </div>
+    </div>-->
+	
+	<div id="global-cookie-message" class="rf-cookie-banner govuk-clearfix" data-module="cookie-banner" role="region"  aria-label="cookie banner" style="display:block">
+		<div class="rf-cookie-banner__wrapper govuk-width-container">
+			<div class="govuk-width-container">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+						<div class="rf-cookie-banner__message">
+							<h2 class="govuk-heading-1">Tell us whether you accept cookies</h2>
+						
+							<p class="govuk-body-m"> 
+							We use 
+							<a class="govuk-link" href="/help/cookies">cookies to collect information</a> 
+							about how you use GOV.UK. We use this information to make the website work as well as possible and improve government services.
+							</p>
+						</div>
+						<div class="rf-cookie-banner__buttons">
+							<div
+								class="rf-cookie-banner__button rf-cookie-banner__button-accept govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+								<button id="accept-all-cookies" class="rf-button govuk-button rf-button--inline" typeof="submit">Agree all Cookies</button>
+							</div>
+							<div
+								class="rf-cookie-banner__button rf-cookie-banner__button-settings govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
+								<button id="preference-cookies" class="button govuk-button rf-button--inline">Set cookie preferences</button>       </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="confirmation-cookie-message" class="rf-cookie-banner__confirmation govuk-width-container" tabIndex="-1">
+		<p class="rf-cookie-banner__confirmation-message" role="alert">You’ve accepted all cookies. You
+			can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+		<button class="rf-cookie-banner__hide-button">Hide
+		</button>
+	</div>
+		
+	
+	
+	
 {% endblock %}
 
 
@@ -131,6 +174,21 @@
       {% endif %}
     });
   </script>
+	<script src="{{ assetPath }}/cookie-banner.js" ></script>
+  	<script src="{{ assetPath }}/cookie-functions.js" ></script>
+	<!--<script src="{{ assetPath }}/cookie-preferences.js" ></script>-->
+
+  <script>
+var element = $("#global-cookie-message");
+window.GOVUK.Modules.CookieBanner.prototype.start(element);
+    if (window.location.pathname == '/help/cookies/')
+    {
+        document.getElementById("global-cookie-message").style.display = "none";
+    }
+$(document).ready(function () {
+  window.GOVUK.deleteUnconsentedCookies();
+});
+</script>
 
   {% if BROWSER_REFRESH_URL %}
     <script src="{{ BROWSER_REFRESH_URL }}"></script>

@@ -1,0 +1,271 @@
+.rf-cookie-banner {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  padding: 10px 0;
+  background-color: #f3f2f1
+}
+
+@media print {
+  .rf-cookie-banner {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .rf-cookie-banner {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .rf-cookie-banner {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.rf-cookie-banner__message {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+}
+
+@media print {
+  .rf-cookie-banner__message {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .rf-cookie-banner__message {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .rf-cookie-banner__message {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 48.0625em) {
+  .rf-cookie-banner__message {
+    padding-right: 20px;
+  }
+}
+
+.rf-cookie-banner__button.govuk-grid-column-one-half-from-desktop {
+  padding: 0;
+}
+
+@media (min-width: 48.0625em) {
+  .rf-cookie-banner__button .govuk-button, .rf-cookie-banner__button .rf-govspeak .rf-button, .rf-govspeak .rf-cookie-banner__button .rf-button {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 48.0525em) {
+  .rf-cookie-banner__button .govuk-button, .rf-cookie-banner__button .rf-govspeak .rf-button, .rf-govspeak .rf-cookie-banner__button .rf-button {
+    margin-bottom: 20px;
+  }
+}
+
+.rf-cookie-banner__button-accept {
+  display: none;
+}
+
+.js-enabled .rf-cookie-banner__button-accept {
+  display: inline-block;
+}
+
+.rf-cookie-banner__confirmation {
+  display: none;
+  position: relative;
+  padding: 5px;
+}
+
+.rf-cookie-banner__confirmation:focus {
+  outline: none;
+}
+
+.rf-cookie-banner__confirmation-message,
+.rf-cookie-banner__hide-button {
+  display: block;
+}
+
+@media (min-width: 48.0625em) {
+  .rf-cookie-banner__confirmation-message,
+  .rf-cookie-banner__hide-button {
+    display: inline-block;
+  }
+}
+
+.rf-cookie-banner__confirmation-message {
+  margin-right: 20px;
+}
+
+@media (min-width: 48.0625em) {
+  .rf-cookie-banner__confirmation-message {
+    max-width: 90%;
+  }
+}
+
+.rf-cookie-banner__hide-button {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  outline: 0;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  color: #1d70b8;
+  padding: 0;
+  margin-top: 10px;
+}
+
+@media print {
+  .rf-cookie-banner__hide-button {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .rf-cookie-banner__hide-button {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .rf-cookie-banner__hide-button {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.rf-cookie-banner__hide-button:hover {
+  color: #003078;
+  cursor: pointer;
+}
+
+.rf-cookie-banner__hide-button:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
+}
+
+@media (min-width: 48.0625em) {
+  .rf-cookie-banner__hide-button {
+    margin-top: 0;
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.rf-cookie-banner#global-cookie-message {
+  background-color: #f3f2f1;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.rf-cookie-banner#global-cookie-message .rf-cookie-banner__message,
+.rf-cookie-banner#global-cookie-message .rf-cookie-banner__buttons,
+.rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation,
+.rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation-message {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__message,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__buttons,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation-message {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__message,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__buttons,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation-message {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__message,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__buttons,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation,
+  .rf-cookie-banner#global-cookie-message .rf-cookie-banner__confirmation-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.rf-cookie-banner#global-cookie-message .rf-cookie-banner__message {
+  margin-bottom: 0;
+}
+
+.rf-cookie-banner#global-cookie-message p {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0 0 10px 0;
+}
+
+@media print {
+  .rf-cookie-banner#global-cookie-message p {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .rf-cookie-banner#global-cookie-message p {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .rf-cookie-banner#global-cookie-message p {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
