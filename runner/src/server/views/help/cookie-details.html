@@ -1,0 +1,282 @@
+<!--<script type="text/javascript">piwik_pagetitle = "Cookie Details";</script>
+<div class="govuk-width-container">
+    {% include 'CCEH GOV Banner' %}-->
+	
+{% extends 'layout.html' %}
+
+{% block content %}
+<main class="govuk-main-wrapper" id="content" role="main">
+    {% block main %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Details about cookies on the Express an interest in a repatriation flight service</h1>
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <p><span class="govuk-body-m">The Express an interest in a repatriation flight service puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site. Find out more about the cookies we use, what they’re for and when they expire.
+            </span></p>
+            <h2 class="govuk-heading-l" id="cookies-that-measure-website-use">Cookies that measure website use</h2>
+
+{% if settings['AnalyticsProvider'] == 'Google' %}
+            <h3 class="govuk-heading-m" id="google-analytics-header">Google Analytics</h3>
+            <p><span class="govuk-body-m">We use Google Analytics software (Universal Analytics) to collect anonymised information about how you use GOV.UK. We do this to help make sure the site is meeting the needs of its users and to help us make improvements to the site and to government digital services.</span></p>
+
+            <div role="note" aria-label="Information" class="govuk-body govuk-inset-text">
+            <p>We do not allow Google to use or share the data about how you use this site.</p>
+            </div>
+
+            <p><span class="govuk-body-m">Google Analytics stores information about:</span></p>
+
+            <ul class="govuk-list--bullet">
+            <li>how you got to the site</li>
+            <li>the pages you visit on GOV.UK and how long you spend on them</li>
+            <li>what you click on while you’re visiting the site</li>
+            </ul>
+
+            <p><span class="govuk-body-m">Google Analytics sets the following cookies.</span></p>
+
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_ga</td>
+                <td class="govuk-table__cell">These help us count how many people visit the Contact an embassy service by tracking if you’ve visited before</td>
+                <td class="govuk-table__cell">2 years</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_gid</td>
+                <td class="govuk-table__cell">These help us count how many people visit the Contact an embassy service by tracking if you’ve visited before</td>
+                <td class="govuk-table__cell">24 hours</td>
+                </tr>
+            </tbody>
+            </table>
+{% else %}
+            <h3 class="govuk-heading-m" id="matomo-analytics-header">Matomo Analytics</h3>
+            <p><span class="govuk-body-m">We use Matomo Analytics software to collect non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. We do this to better understand how applicants for legalisation use the website. From time to time, the Foreign, Commonwealth & Deveopment Office may release non-personally-identifying information in the aggregate, eg, by publishing a report on trends in the usage of its website.</span></p>
+
+            <p><span class="govuk-body-m">Matomo Analytics sets the following cookies.</span></p>
+
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_pk_ref</td>
+                <td class="govuk-table__cell">Tracking of web site usage</td>
+                <td class="govuk-table__cell">2 years</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_pk_cvar</td>
+                <td class="govuk-table__cell">Tracking of web site usage</td>
+                <td class="govuk-table__cell">2 years</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_pk_id</td>
+                <td class="govuk-table__cell">Tracking of web site usage</td>
+                <td class="govuk-table__cell">2 years</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">_pk_ses</td>
+                <td class="govuk-table__cell">Tracking of web site usage</td>
+                <td class="govuk-table__cell">2 years</td>
+                </tr>
+            </tbody>
+            </table>
+{% endif %}
+            <p><span class="govuk-body-m">We also set our own cookie to understand how people move through the site:</span></p>
+
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">search_links_clicked</td>
+                <td class="govuk-table__cell">Records which search links you have clicked</td>
+                <td class="govuk-table__cell">1 hour</td>
+                </tr>
+            </tbody>
+            </table>
+
+            
+
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" id="javascript-detection">JavaScript detection</h2>
+
+            <p><span class="govuk-body-m">We measure how many people visiting GOV.UK are using JavaScript, so that the site works for as many users as possible.</span></p>
+
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">JS-Detection</td>
+                <td class="govuk-table__cell">This tells us if you are browsing GOV.UK while running JavaScript</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l" id="cookies-that-help-with-our-communications-and-marketing">Cookies that help with our communications and marketing</h2>
+
+            <p><span class="govuk-body-m">Some Express an interest in a repatriation flight pages may contain content from other sites, like YouTube or Flickr, which may set their own cookies. These sites are sometimes called ‘third party’ services. This tells us how many people are seeing the content and whether it’s useful.
+            <br><br>
+            In addition, if you share a link to a Express an interest in a repatriation flight, the service you share it on (for example, Facebook) may set a cookie. We have no control over cookies set on other websites - you can turn them off, but not through us.</span></p>
+
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l" id="cookies-that-remember-your-settings">Cookies that remember your settings</h2>
+
+            <p><span class="govuk-body-m">These cookies do things like remember your preferences and the choices you make, to personalise your experience of using Express an interest in a repatriation flight.
+            </span></p>
+
+            <h3 class="govuk-heading-m" id="microsoft-cookies-settings">Microsoft cookies</h3>
+
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">ContextLanguageCode</td>
+                <td class="govuk-table__cell">Stores the default language of the user accessing portal within a session and across webpages. The cookie is deleted after session closes</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">timezoneoffset</td>
+                <td class="govuk-table__cell">Holds the timezone difference between UTC and Local browser time</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">isDSTSupport</td>
+                <td class="govuk-table__cell">Indicates whether a specified date and time falls in the range of daylight saving time</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">isDSTObserved</td>
+                <td class="govuk-table__cell">Stores a value to indicate if the current moment is in daylight saving time</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+            </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l" id="strictly-necessary-cookies">Strictly necessary cookies</h2>
+            <h3 class="govuk-heading-m" id="microsoft-cookies">Microsoft cookies</h3>
+            <p><span class="govuk-body-m">
+            The Contact an embassy service uses Microsoft's PowerApp Portals as the basis for its web pages. Microsoft set a number of cookies to enable this functionality to work.
+
+            </span></p>
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">ARRAffinity</td>
+                <td class="govuk-table__cell">Added automatically by Azure websites and ensures that requests are load balanced between different sites. Doesn't store any of user information</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">ASP.NET_SessionId</td>
+                <td class="govuk-table__cell">Used to maintain the session of a logged in user to avoid repeated sign-in. The cookie isn't persistent and is deleted after session closes</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <!--<tr class="govuk-table__row">
+                <td class="govuk-table__cell">Dynamics365PortalAnalytics</td>
+                <td class="govuk-table__cell">Critical service cookie to analyse service usage anonymously and aggregated for statistical purpose</td>
+                <td class="govuk-table__cell">3 months</td>
+                </tr>-->
+            </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m" id="microsoft-cookies">Cookies message</h3>
+            <p><span class="govuk-body-m">
+            You may see a banner when you visit the Express an interest in a repatriation flight service inviting you to accept cookies or review your settings. We’ll set cookies so that your computer knows you’ve seen it and not to show it again, and also to store your settings.
+
+            </span></p>
+            <table class="govuk-table">
+            <thead class="govuk-table__header">
+                <tr>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Purpose</th>
+                <th scope="col" class="govuk-table__header">Expires</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">cookies_policy</td>
+                <td class="govuk-table__cell">	Saves your cookie consent settings</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+                <tr class="govuk-table__row">
+                <td class="govuk-table__cell">cookies_preferences_set</td>
+                <td class="govuk-table__cell">Lets us know that you’ve saved your cookie consent settings</td>
+                <td class="govuk-table__cell">1 year</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l" id="change-your-settings">Change your settings</h2>
+
+            <p><span class="govuk-body-m">You can <a href="/help/cookies" data-module="track-click" data-track-category="cookieSettings" data-track-action="Change your cookie settings" class="govuk-link">change which cookies you’re happy for us to use</a>.</span></p>
+
+        </div>
+    </div>
+
+<style>
+.govuk-table__header {font-size: 14px !important; font-family: GDS Transport,Arial,sans-serif !important; }
+.govuk-table__cell {font-size: 14px !important; font-family: GDS Transport,Arial,sans-serif !important; }
+</style>                
+  
+</main>
+{% endblock %}

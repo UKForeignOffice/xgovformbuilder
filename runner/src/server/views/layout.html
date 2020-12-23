@@ -42,7 +42,7 @@
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <noscript><p><img src="{{ matomoUrl }}/piwik.php?idsite={{ matomoId }}&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="{{ matomoUrl }}/piwik/piwik.php?idsite={{ matomoId }}&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   {% endif %}
   <!-- End Matomo Code -->
 
@@ -93,20 +93,22 @@
 							<div
 								class="rf-cookie-banner__button rf-cookie-banner__button-settings govuk-grid-column-full govuk-grid-column-one-half-from-desktop">
 								<!--<button id="preference-cookies" class="button govuk-button rf-button--inline">Set cookie preferences</button> -->
-<a class="rf-button govuk-button rf-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookies">Set cookie preferences</a>								</p>
+<a class="rf-button govuk-button rf-button--inline" role="button" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked" href="/help/cookie-details">Set cookie preferences</a>								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div id="confirmation-cookie-message" class="rf-cookie-banner__confirmation govuk-width-container" tabIndex="-1">
-		<p class="rf-cookie-banner__confirmation-message" role="alert">You’ve accepted all cookies. You
-			can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
-		<button class="rf-cookie-banner__hide-button">Hide
-		</button>
+		
+		<div id="confirmation-cookie-message" class="rf-cookie-banner__confirmation govuk-width-container" tabIndex="-1">
+			<p class="rf-cookie-banner__confirmation-message" role="alert">You’ve accepted all cookies. You
+				can <a class="govuk-link" href="/help/cookie-details">change your cookie settings</a> at any time.</p>
+			<!--<button class="rf-cookie-banner__hide-button">Hide
+			</button>-->
+			    <button class="rf-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide</button>
+
+		</div>
 	</div>
 		
 	
@@ -178,8 +180,7 @@
   </script>
 	<script src="{{ assetPath }}/cookie-banner.js" ></script>
   	<script src="{{ assetPath }}/cookie-functions.js" ></script>
-	<script src="{{ assetPath }}/cookie-settings.js" > </script>
-	<!--<script src="{{ assetPath }}/cookie-preferences.js" ></script>-->
+	<script src="{{ assetPath }}/cookie-preferences.js" ></script>
 
   <script>
 var element = $("#global-cookie-message");
